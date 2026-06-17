@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const navItems = [
   { label: "Início", href: "#inicio" },
@@ -11,14 +12,21 @@ const navItems = [
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-white/70 bg-white/90 shadow-line backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-white/70 bg-white/92 shadow-line backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-4 lg:px-8">
         <a href="#inicio" className="flex items-center gap-3" aria-label="Energys">
-          <span className="flex h-10 w-10 items-center justify-center rounded-md bg-energys-navy text-sm font-bold text-white shadow-soft">
-            EN
+          <span className="flex h-11 w-11 items-center justify-center rounded-md bg-gradient-to-br from-energys-deep to-energys-navy p-1.5 shadow-soft">
+            <Image
+              src="/brand/energys-symbol.png"
+              alt=""
+              width={64}
+              height={64}
+              className="h-full w-full object-contain"
+              aria-hidden="true"
+            />
           </span>
           <span className="flex flex-col leading-none">
-            <span className="text-lg font-bold text-energys-navy">
+            <span className="text-lg font-extrabold text-energys-navy">
               ENERGYS
             </span>
             <span className="mt-1 text-xs font-medium text-slate-500">
@@ -41,7 +49,7 @@ export function Header() {
 
         <a
           href="#lead-form-hero"
-          className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-energys-yellow px-4 text-sm font-bold text-energys-navy transition hover:bg-[#f5a414] focus:outline-none focus:ring-4 focus:ring-energys-yellow/35"
+          className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-energys-yellow px-4 text-sm font-bold text-energys-deep shadow-[0_12px_30px_rgba(253,176,42,0.28)] transition hover:bg-[#f5a414] focus:outline-none focus:ring-4 focus:ring-energys-yellow/35"
           aria-label="Solicitar análise energética"
         >
           <span className="hidden sm:inline">Solicitar análise</span>

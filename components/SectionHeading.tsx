@@ -16,11 +16,11 @@ export function SectionHeading({
   return (
     <div className={`flex max-w-3xl flex-col gap-4 ${alignment}`}>
       {eyebrow ? (
-        <p className="text-sm font-semibold uppercase text-energys-blue">
+        <p className="text-sm font-bold uppercase text-energys-blue">
           {eyebrow}
         </p>
       ) : null}
-      <h2 className="text-3xl font-semibold leading-tight text-energys-navy sm:text-4xl">
+      <h2 className="text-3xl font-bold leading-tight text-energys-navy sm:text-4xl">
         {title}
       </h2>
       {description ? (

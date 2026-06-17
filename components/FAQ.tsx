@@ -39,7 +39,7 @@ export function FAQ() {
       {faqs.map((faq) => (
         <details
           key={faq.question}
-          className="group rounded-lg border border-slate-200 bg-white p-5 shadow-[0_10px_30px_rgba(16,32,51,0.05)]"
+          className="group rounded-lg border border-slate-200 bg-white/95 p-5 shadow-[0_16px_42px_rgba(0,48,109,0.07)]"
         >
           <summary className="flex cursor-pointer list-none items-center justify-between gap-4 rounded-sm text-left text-base font-semibold text-energys-navy focus:outline-none focus:ring-4 focus:ring-energys-blue/15">
             {faq.question}

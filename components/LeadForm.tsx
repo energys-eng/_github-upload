@@ -143,12 +143,12 @@ export function LeadForm({
     <form
       id={id ?? `lead-form-${formLocation}`}
       onSubmit={handleSubmit}
-      className="scroll-mt-28 rounded-lg border border-white/80 bg-white p-5 shadow-soft sm:p-6"
+      className="scroll-mt-28 rounded-lg border border-white/85 bg-white/95 p-5 shadow-premium backdrop-blur sm:p-6"
       noValidate
       aria-busy={isSubmitting}
     >
       <div className="mb-5">
-        <p className="text-lg font-semibold text-energys-navy">{title}</p>
+        <p className="text-lg font-bold text-energys-navy">{title}</p>
         <p className="mt-2 text-sm leading-6 text-slate-600">{description}</p>
       </div>
 
@@ -170,7 +170,7 @@ export function LeadForm({
               }
             }}
             placeholder="Seu nome"
-            className="mt-2 h-12 w-full rounded-md border border-slate-200 bg-white px-4 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-energys-blue focus:ring-4 focus:ring-energys-blue/15 aria-[invalid=true]:border-red-400 aria-[invalid=true]:focus:ring-red-200"
+            className="mt-2 h-12 w-full rounded-md border border-slate-200 bg-white px-4 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-energys-blue focus:ring-4 focus:ring-energys-cyan/20 aria-[invalid=true]:border-red-400 aria-[invalid=true]:focus:ring-red-200"
             required
             aria-invalid={Boolean(fieldErrors.name)}
             aria-describedby={
@@ -202,7 +202,7 @@ export function LeadForm({
               }
             }}
             placeholder="(11) 99999-9999"
-            className="mt-2 h-12 w-full rounded-md border border-slate-200 bg-white px-4 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-energys-blue focus:ring-4 focus:ring-energys-blue/15 aria-[invalid=true]:border-red-400 aria-[invalid=true]:focus:ring-red-200"
+            className="mt-2 h-12 w-full rounded-md border border-slate-200 bg-white px-4 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-energys-blue focus:ring-4 focus:ring-energys-cyan/20 aria-[invalid=true]:border-red-400 aria-[invalid=true]:focus:ring-red-200"
             required
             aria-invalid={Boolean(fieldErrors.phone)}
             aria-describedby={`phone-hint-${formLocation}${
@@ -231,7 +231,7 @@ export function LeadForm({
             name="profile"
             value={profile}
             onChange={(event) => setProfile(event.target.value)}
-            className="mt-2 h-12 w-full rounded-md border border-slate-200 bg-white px-4 text-slate-900 outline-none transition focus:border-energys-blue focus:ring-4 focus:ring-energys-blue/15"
+            className="mt-2 h-12 w-full rounded-md border border-slate-200 bg-white px-4 text-slate-900 outline-none transition focus:border-energys-blue focus:ring-4 focus:ring-energys-cyan/20"
           >
             <option value="">Selecione se quiser</option>
             {profiles.map((item) => (
@@ -245,7 +245,7 @@ export function LeadForm({
         <button
           type="submit"
           disabled={isSubmitting}
-          className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-energys-navy px-5 text-sm font-bold text-white transition hover:bg-energys-blue focus:outline-none focus:ring-4 focus:ring-energys-blue/25 disabled:cursor-not-allowed disabled:opacity-70"
+          className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-gradient-to-r from-energys-deep via-energys-navy to-energys-mid px-5 text-sm font-bold text-white shadow-[0_14px_34px_rgba(28,2,98,0.24)] transition hover:brightness-110 focus:outline-none focus:ring-4 focus:ring-energys-blue/25 disabled:cursor-not-allowed disabled:opacity-70"
         >
           {isSubmitting ? (
             <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />

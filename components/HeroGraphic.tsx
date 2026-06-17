@@ -2,7 +2,7 @@ export function HeroGraphic() {
   const bars = ["h-20", "h-28", "h-16", "h-32", "h-24", "h-36", "h-20"];
 
   return (
-    <div className="technical-panel relative overflow-hidden rounded-lg border border-white/80 p-5 shadow-soft">
+    <div className="technical-panel relative overflow-hidden rounded-lg border border-white/80 p-5 shadow-premium">
       <div className="absolute inset-0 technical-grid opacity-70" aria-hidden="true" />
       <div className="relative rounded-lg border border-energys-blue/10 bg-white/90 p-4 backdrop-blur">
         <div className="mb-5 flex items-center justify-between gap-4">
@@ -10,7 +10,7 @@ export function HeroGraphic() {
             <p className="text-xs font-semibold uppercase text-energys-blue">
               análise energética
             </p>
-            <p className="mt-2 text-xl font-semibold text-energys-navy">
+            <p className="mt-2 text-xl font-bold text-energys-navy">
               Consumo, demanda e eficiência no mesmo painel.
             </p>
           </div>
@@ -27,7 +27,7 @@ export function HeroGraphic() {
                   aria-hidden="true"
                 >
                   <span
-                    className={`${height} w-full rounded-sm bg-gradient-to-t from-energys-blue to-energys-yellow`}
+                    className={`${height} w-full rounded-sm bg-gradient-to-t from-energys-deep via-energys-blue to-energys-yellow`}
                   />
                 </div>
               ))}
