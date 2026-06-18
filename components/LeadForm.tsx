@@ -261,7 +261,7 @@ export function LeadForm({
       </p>
       <ul className="mt-3 grid gap-1 text-xs leading-5 text-slate-500">
         <li>Contato técnico, consultivo e sem pressão comercial.</li>
-        <li>Nenhum dado é enviado a serviços externos sem WEBHOOK_URL configurado.</li>
+        <li>Suas informações serão usadas para iniciar uma conversa sobre sua realidade energética.</li>
       </ul>
 
       {status.message ? (

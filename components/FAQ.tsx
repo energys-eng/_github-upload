@@ -4,7 +4,7 @@ const faqs = [
   {
     question: "A análise energética serve para residência?",
     answer:
-      "Sim. Residências com consumo relevante, equipamentos de maior potência ou interesse em energia solar podem se beneficiar de uma leitura técnica do perfil de consumo antes de decidir por qualquer investimento."
+      "Sim. Residências com consumo relevante, equipamentos de maior potência ou interesse em energia solar podem se beneficiar de uma leitura técnica antes de decidir por qualquer investimento."
   },
   {
     question: "A Energys atende empresas e indústrias?",
@@ -12,9 +12,14 @@ const faqs = [
       "Sim. A análise pode considerar rotina de operação, demanda, tarifa, fator de potência, histórico de consumo e oportunidades de gestão energética para comércios, PMEs, indústrias e grandes consumidores."
   },
   {
+    question: "A Energys atende propriedades rurais?",
+    answer:
+      "Sim. Propriedades rurais podem ter demandas específicas, como irrigação, bombeamento, refrigeração, armazenagem, ordenha e continuidade da produção. Cada caso precisa ser avaliado conforme consumo, estrutura e objetivo."
+  },
+  {
     question: "Energia solar elimina totalmente a conta de luz?",
     answer:
-      "Não é correto tratar energia solar como eliminação total da conta. A viabilidade e os resultados dependem do consumo, tarifa, regras da distribuidora, estrutura disponível e dimensionamento técnico."
+      "Não é correto tratar energia solar como eliminação total da conta. A viabilidade e os resultados dependem do consumo, da tarifa, das regras da distribuidora, da estrutura disponível e do dimensionamento técnico."
   },
   {
     question: "Preciso enviar minha conta de energia?",
@@ -30,6 +35,16 @@ const faqs = [
     question: "Bateria faz sentido para qualquer cliente?",
     answer:
       "Não necessariamente. Baterias e sistemas híbridos precisam ser avaliados conforme objetivo, criticidade da operação, perfil de consumo, infraestrutura e viabilidade técnica."
+  },
+  {
+    question: "A análise energética tem custo?",
+    answer:
+      "A avaliação inicial pode ser feita para entender o perfil e direcionar o melhor caminho. Estudos técnicos mais detalhados podem depender de escopo, dados disponíveis e complexidade da análise."
+  },
+  {
+    question: "A Energys atende somente energia solar?",
+    answer:
+      "Não. A Energys também atua com gestão de energia, eficiência energética, projetos elétricos, soluções para Grupo A, baterias e análise técnica para diferentes perfis de consumo."
   }
 ];
 

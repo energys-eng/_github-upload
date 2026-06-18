@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   applicationName: "Energys",
   title: "Energys | Energia Solar, Gestão de Energia e Engenharia Elétrica",
   description:
-    "Soluções de energia solar, gestão energética e engenharia elétrica para residências, empresas, indústrias e propriedades rurais. Solicite uma análise energética.",
+    "Soluções de energia solar, gestão energética e engenharia elétrica para residências, empresas, indústrias e propriedades rurais. Solicite uma análise energética com a Energys.",
   keywords: [
     "energia solar",
     "gestão de energia",
@@ -19,18 +19,18 @@ export const metadata: Metadata = {
     follow: true
   },
   openGraph: {
-    title: "Energys | Energia Solar, Gestão de Energia e Engenharia Elétrica",
+    title: "Energys | Energia sob controle. Decisão com dados.",
     description:
-      "Soluções de energia solar, gestão energética e engenharia elétrica para residências, empresas, indústrias e propriedades rurais. Solicite uma análise energética.",
+      "Engenharia elétrica, energia solar e gestão energética para ajudar residências, empresas, indústrias e propriedades rurais a tomar decisões energéticas com mais segurança.",
     type: "website",
     locale: "pt_BR",
     siteName: "Energys"
   },
   twitter: {
     card: "summary",
-    title: "Energys | Energia Solar, Gestão de Energia e Engenharia Elétrica",
+    title: "Energys | Energia sob controle. Decisão com dados.",
     description:
-      "Soluções de energia solar, gestão energética e engenharia elétrica para residências, empresas, indústrias e propriedades rurais. Solicite uma análise energética."
+      "Engenharia elétrica, energia solar e gestão energética para ajudar residências, empresas, indústrias e propriedades rurais a tomar decisões energéticas com mais segurança."
   }
 };
 

@@ -33,25 +33,25 @@ const audiences: CardItem[] = [
   {
     title: "Residencial",
     description:
-      "Conta alta, conforto, valorização do imóvel e segurança para avaliar investimentos energéticos com critério.",
+      "Para casas com alto consumo que buscam reduzir custos, valorizar o imóvel e investir em energia com segurança técnica.",
     icon: Home
   },
   {
     title: "Comercial",
     description:
-      "Redução de custo fixo, previsibilidade e operação com menos surpresas para comércios urbanos e PMEs.",
+      "Para clínicas, restaurantes, lojas, escritórios e PMEs que querem reduzir custo fixo, melhorar previsibilidade e proteger a margem do negócio.",
     icon: Store
   },
   {
     title: "Industrial",
     description:
-      "Demanda, fator de potência, faturas complexas, eficiência operacional e dados para grandes consumidores.",
+      "Para operações que precisam controlar demanda, fator de potência, faturas complexas, desperdícios e decisões com impacto financeiro.",
     icon: Factory
   },
   {
     title: "Rural",
     description:
-      "Energia para irrigação, bombeamento, refrigeração, armazenagem e continuidade da produção no campo.",
+      "Para propriedades que dependem de energia para irrigação, bombeamento, refrigeração, armazenagem, ordenha e continuidade da produção.",
     icon: Tractor
   }
 ];
@@ -70,37 +70,37 @@ const solutions: CardItem[] = [
   {
     title: "Gestão de Energia",
     description:
-      "Acompanhamento de consumo, contratos, desvios e indicadores para aumentar previsibilidade e controle.",
+      "Transforma dados de consumo, demanda, faturas e indicadores em decisões para reduzir desperdícios, evitar surpresas e melhorar o controle dos custos.",
     icon: LineChart
   },
   {
     title: "Eficiência Energética",
     description:
-      "Identificação de desperdícios, perdas e oportunidades de melhoria em equipamentos e processos.",
+      "Identifica perdas, desperdícios e oportunidades de melhoria em equipamentos, processos e rotinas de uso da energia.",
     icon: Gauge
   },
   {
     title: "Energia Solar Fotovoltaica",
     description:
-      "Estudo de viabilidade, dimensionamento e projeto quando a geração solar fizer sentido para o perfil analisado.",
+      "Projetos dimensionados conforme consumo, tarifa, estrutura disponível e objetivo do cliente, com análise técnica antes da implantação.",
     icon: Sun
   },
   {
     title: "Soluções para Grupo A",
     description:
-      "Análise de demanda, modalidade tarifária, fator de potência e pontos críticos para grandes consumidores.",
+      "Análise de demanda contratada, modalidade tarifária, fator de potência, memória de massa e pontos críticos para grandes consumidores.",
     icon: Building2
   },
   {
     title: "Projetos de Engenharia Elétrica",
     description:
-      "Projetos técnicos com responsabilidade, leitura normativa e visão integrada da instalação elétrica.",
+      "Projetos técnicos, adequações, laudos e soluções elétricas com responsabilidade, leitura normativa e visão integrada da instalação.",
     icon: Ruler
   },
   {
     title: "Baterias e Sistemas Híbridos",
     description:
-      "Avaliação técnica para autonomia, continuidade operacional e integração com geração, quando aplicável.",
+      "Avaliação técnica para backup, autonomia, continuidade operacional e integração com geração solar, quando fizer sentido para a realidade analisada.",
     icon: BatteryCharging
   }
 ];
@@ -109,12 +109,12 @@ const methodSteps = [
   {
     title: "Você solicita a análise",
     description:
-      "O primeiro contato coleta dados básicos para entender objetivo, perfil e tipo de unidade consumidora."
+      "O primeiro contato coleta dados básicos para entender seu objetivo, tipo de unidade consumidora e perfil de necessidade."
   },
   {
     title: "Entendemos seu perfil de consumo",
     description:
-      "A Energys avalia rotina, histórico, tarifa, demanda e características técnicas relevantes."
+      "Avaliamos rotina, histórico de consumo, tarifa, demanda, estrutura elétrica e características relevantes da instalação."
   },
   {
     title: "Identificamos oportunidades",
@@ -124,12 +124,12 @@ const methodSteps = [
   {
     title: "Apresentamos uma solução viável",
     description:
-      "A recomendação pode envolver solar, gestão, eficiência, projetos elétricos ou uma combinação técnica."
+      "A recomendação pode envolver solar, gestão de energia, eficiência, projetos elétricos, baterias ou uma combinação técnica."
   },
   {
     title: "Executamos e acompanhamos",
     description:
-      "Quando há implantação, a Energys atua antes, durante e depois para manter clareza técnica no processo."
+      "Quando há implantação, a Energys conduz as etapas com engenharia, segurança e acompanhamento técnico antes, durante e depois."
   }
 ];
 
@@ -137,15 +137,27 @@ const trustItems = [
   "Engenharia elétrica aplicada",
   "Análise antes da proposta",
   "Projetos com responsabilidade técnica",
-  "Visão sobre energia solar, gestão energética e eficiência",
-  "Respeito às normas e concessionárias",
+  "Visão integrada entre energia solar, gestão energética e eficiência",
+  "Respeito às normas, concessionárias e critérios técnicos",
   "Acompanhamento antes, durante e depois da implantação"
 ];
 
 const heroHighlights = [
-  "Diagnóstico antes da proposta",
-  "Solar, gestão e eficiência no mesmo raciocínio",
-  "Residencial, comercial, industrial e rural"
+  {
+    title: "Diagnóstico antes da proposta",
+    description:
+      "Antes de indicar solar, gestão, bateria ou adequação elétrica, avaliamos o perfil de consumo e a realidade da instalação."
+  },
+  {
+    title: "Solar, gestão e eficiência no mesmo raciocínio",
+    description:
+      "A Energys conecta geração, consumo, tarifa e infraestrutura para orientar decisões mais seguras."
+  },
+  {
+    title: "Residencial, comercial, industrial e rural",
+    description:
+      "Soluções analisadas conforme o uso da energia, o tipo de operação e o objetivo de cada cliente."
+  }
 ];
 
 function IconCard({ item }: { item: CardItem }) {
@@ -185,9 +197,9 @@ export default function HomePage() {
                 Energia sob controle. Decisão com dados.
               </h1>
               <p className="mt-5 max-w-2xl text-base leading-7 text-blue-50/90 sm:text-lg sm:leading-8">
-                A Energys analisa consumo, tarifa, demanda, geração e desperdícios para
-                orientar decisões energéticas com engenharia, dados e responsabilidade
-                técnica.
+                A Energys ajuda residências, empresas, indústrias e propriedades rurais a
+                entender onde a energia pesa mais, identificar desperdícios e escolher
+                soluções com engenharia, dados e segurança técnica.
               </p>
 
               <div className="mt-7 flex flex-col gap-3 sm:flex-row">
@@ -207,25 +219,32 @@ export default function HomePage() {
                 </a>
               </div>
 
+              <p className="mt-4 max-w-xl text-sm leading-6 text-blue-50/75">
+                Sem promessa pronta. Primeiro entendemos seu consumo, sua estrutura e seus
+                objetivos.
+              </p>
             </div>
 
             <div className="lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:self-start lg:pt-2 xl:sticky xl:top-28">
               <LeadForm
                 id="lead-form-hero"
                 formLocation="hero"
-                title="Solicite uma análise energética"
-                description="Informe seus dados para a equipe da Energys entender seu perfil de consumo."
+                title="Receba uma avaliação inicial para o seu perfil de consumo"
+                description="Preencha seus dados e nossa equipe entra em contato para entender sua realidade antes de indicar qualquer solução."
               />
             </div>
 
             <div className="grid gap-3 sm:grid-cols-3 lg:col-start-1 lg:row-start-2">
               {heroHighlights.map((item) => (
                 <div
-                  key={item}
-                  className="flex min-h-16 items-start gap-3 rounded-md border border-white/12 bg-white/10 p-3 shadow-[0_16px_38px_rgba(0,0,0,0.16)] backdrop-blur"
+                  key={item.title}
+                  className="min-h-32 rounded-md border border-white/12 bg-white/10 p-4 shadow-[0_16px_38px_rgba(0,0,0,0.16)] backdrop-blur"
                 >
-                  <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-energys-yellow" />
-                  <span className="text-sm font-medium leading-5 text-blue-50">{item}</span>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-energys-yellow" />
+                    <h3 className="text-sm font-bold leading-5 text-blue-50">{item.title}</h3>
+                  </div>
+                  <p className="mt-3 text-sm leading-6 text-blue-50/75">{item.description}</p>
                 </div>
               ))}
             </div>
@@ -241,7 +260,7 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="Para quem é"
               title="A energia pesa de formas diferentes para cada cliente"
-              description="Cada unidade consumidora tem uma realidade própria. A análise considera perfil de uso, tarifa, demanda, rotina operacional e oportunidades técnicas antes de indicar uma solução."
+              description="Cada unidade consumidora tem uma realidade própria. Por isso, a análise considera consumo, rotina, tarifa, demanda, infraestrutura elétrica e objetivos antes de indicar qualquer solução."
             />
             <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
               {audiences.map((item) => (
@@ -256,9 +275,14 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="Problema"
               title="A conta de luz mostra o resultado. Mas nem sempre mostra onde está o problema."
-              description="Muitas perdas estão em decisões invisíveis no dia a dia: horários de operação, demanda, fator de potência, falta de monitoramento e ausência de uma leitura técnica antes do investimento."
+              description="Quando a energia pesa no orçamento, o problema nem sempre está apenas no consumo. Pode estar na demanda contratada, nos horários de operação, no fator de potência, em equipamentos pouco eficientes, em um sistema solar mal dimensionado ou simplesmente na falta de monitoramento."
             />
             <div className="rounded-lg border brand-border bg-energys-paper p-6 shadow-soft">
+              <p className="mb-6 leading-7 text-slate-700">
+                Por isso, antes de propor uma solução, a Energys analisa a realidade de cada
+                cliente. O objetivo é entender o cenário completo para indicar um caminho
+                tecnicamente viável, economicamente coerente e adequado ao perfil de uso.
+              </p>
               <div className="mb-6 flex items-center gap-3">
                 <div className="flex h-11 w-11 items-center justify-center rounded-md bg-energys-navy text-white">
                   <Activity className="h-5 w-5" aria-hidden="true" />
@@ -271,7 +295,7 @@ export default function HomePage() {
                 {problemPoints.map((point) => (
                   <div
                     key={point}
-                  className="flex gap-3 rounded-md border border-slate-200 bg-white p-4"
+                    className="flex gap-3 rounded-md border border-slate-200 bg-white p-4"
                   >
                     <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-energys-blue" />
                     <span className="text-sm leading-6 text-slate-700">{point}</span>
@@ -287,12 +311,13 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="Soluções"
               title="Engenharia e inteligência energética para orientar melhores decisões"
-              description="A Energys não parte de uma solução única. A recomendação nasce da leitura dos dados, da estrutura elétrica e do objetivo de cada cliente."
+              description="A Energys não parte de uma solução única. Cada recomendação nasce da leitura dos dados, da estrutura elétrica, da tarifa, da operação e do objetivo de cada cliente."
             />
             <div className="mt-8 rounded-lg border border-energys-blue/10 bg-white p-5 text-sm leading-6 text-slate-700 shadow-[0_12px_36px_rgba(0,48,109,0.06)]">
               <strong className="text-energys-navy">Ponto de partida:</strong> antes de
-              propor solar, bateria, gestão ou adequação elétrica, a Energys verifica se a
-              solução é compatível com o perfil de consumo, a tarifa e a infraestrutura.
+              propor solar, bateria, gestão ou adequação elétrica, avaliamos se a solução
+              faz sentido para o perfil de consumo, a infraestrutura disponível e o
+              resultado esperado.
             </div>
             <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
               {solutions.map((item) => (
@@ -311,6 +336,9 @@ export default function HomePage() {
               <h2 className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl">
                 Como funciona a análise da Energys
               </h2>
+              <p className="mt-4 text-xl font-semibold text-white">
+                A Energys não começa pelo orçamento. Começa pela análise.
+              </p>
               <p className="mt-4 text-base leading-7 text-blue-100 sm:text-lg">
                 Um método consultivo para transformar dados de energia em decisões mais
                 claras, responsáveis e alinhadas à realidade do cliente.
@@ -338,15 +366,20 @@ export default function HomePage() {
           <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[0.92fr_1.08fr] lg:px-8">
             <SectionHeading
               eyebrow="Confiança"
-              title="Decisões energéticas exigem responsabilidade técnica"
-              description="A Energys atua com visão de engenharia, análise antes da proposta e respeito ao contexto de cada instalação. O objetivo é orientar o caminho mais adequado, não vender uma resposta pronta."
+              title="Por que escolher a Energys para orientar sua decisão energética?"
+              description="Porque energia envolve investimento, segurança elétrica, regras da concessionária, perfil de consumo e impacto financeiro. A Energys analisa esses fatores antes de recomendar qualquer caminho."
             />
+            <p className="max-w-3xl leading-7 text-slate-700 lg:col-start-1 lg:row-start-2">
+              A proposta é entregar mais do que uma solução pronta. É ajudar o cliente a
+              entender sua energia, comparar possibilidades e avançar com mais segurança
+              técnica.
+            </p>
 
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-4 sm:grid-cols-2 lg:col-start-2 lg:row-span-2 lg:row-start-1">
               {trustItems.map((item) => (
                 <div
                   key={item}
-                className="flex gap-3 rounded-lg border brand-border bg-energys-paper p-5"
+                  className="flex gap-3 rounded-lg border brand-border bg-energys-paper p-5"
                 >
                   <ShieldCheck className="mt-0.5 h-5 w-5 shrink-0 text-energys-blue" />
                   <span className="font-medium leading-6 text-slate-800">{item}</span>
@@ -375,12 +408,12 @@ export default function HomePage() {
                 <ClipboardCheck className="h-7 w-7" aria-hidden="true" />
               </div>
               <h2 className="max-w-3xl text-4xl font-semibold leading-tight text-energys-navy sm:text-5xl">
-                Solicite uma análise energética para sua realidade.
+                Quer entender onde sua energia pode estar pesando mais?
               </h2>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-700">
-                Envie seu contato e a equipe da Energys vai entender seu perfil de consumo
-                para indicar o melhor caminho com segurança técnica, seja para residência,
-                comércio, indústria ou propriedade rural.
+                Envie seu contato e a Energys avalia o seu perfil para indicar o melhor
+                caminho com segurança técnica, seja para residência, comércio, indústria ou
+                propriedade rural.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 {["Dados de consumo", "Tarifa", "Estrutura elétrica", "Objetivo do cliente"].map(
@@ -394,13 +427,24 @@ export default function HomePage() {
                   )
                 )}
               </div>
+              <a
+                href="#lead-form-final"
+                className="mt-8 inline-flex h-12 w-fit items-center justify-center gap-2 rounded-md bg-energys-yellow px-5 text-sm font-bold text-energys-deep shadow-[0_18px_42px_rgba(253,176,42,0.24)] transition hover:bg-[#f5a414] focus:outline-none focus:ring-4 focus:ring-energys-yellow/35"
+              >
+                Quero uma análise da minha energia
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              </a>
+              <p className="mt-4 max-w-xl text-sm leading-6 text-slate-600">
+                A análise inicial depende das informações de consumo, tarifa, estrutura
+                elétrica e objetivo de cada cliente.
+              </p>
             </div>
 
             <LeadForm
               id="lead-form-final"
               formLocation="final"
-              title="Quero falar com a Energys"
-              description="A análise inicial depende das informações de consumo, tarifa, estrutura elétrica e objetivo de cada cliente."
+              title="Fale com a Energys"
+              description="Preencha seus dados para iniciar uma conversa técnica e consultiva."
             />
           </div>
         </section>
